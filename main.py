@@ -146,4 +146,4 @@ print("Predicted Emotion:", predictedClass)
 predictions = np.argmax(model.predict(testSequences), axis=-1)
 predictions.shape, testLabels.shape
 
-showConfusionMatrix(testLabels, predictions, )
+showConfusionMatrix(testLabels, predictions, testLabels)

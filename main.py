@@ -36,7 +36,7 @@ def show_history(h):
     plt.show()
 
 
-def show_confusion_matrix(y_true, y_pred, classes):
+def showConfusionMatrix(y_true, y_pred, classes):
     from sklearn.metrics import confusion_matrix
 
     cm = confusion_matrix(y_true, y_pred, normalize='true')
@@ -146,4 +146,4 @@ print("Predicted Emotion:", predictedClass)
 predictions = np.argmax(model.predict(testSequences), axis=-1)
 predictions.shape, testLabels.shape
 
-show_confusion_matrix(testLabels, preds, list(classes))
+showConfusionMatrix(testLabels, predictions, )

@@ -12,7 +12,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 dataset = datasets.load_dataset("dair-ai/emotion")
 
 
-def show_history(h):
+def showHistory(h):
     epochs_trained = len(h.history['loss'])
     plt.figure(figsize=(16, 6))
 
@@ -125,7 +125,7 @@ h = model.fit(
     ]
 )
 
-show_history(h)
+showHistory(h)
 
 testTweets, testLabels = getTweet(testSet)
 testSequences = getSequences(tokenizer, testTweets)

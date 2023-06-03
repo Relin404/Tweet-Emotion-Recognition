@@ -6,13 +6,21 @@ This repository contains an IPython Notebook that demonstrates the training of a
 To run the code in this notebook, you need to have the following dependencies installed:
 
 - datasets:
-   - ```!pip install datasets```
+```sh
+pip install datasets
+```
 - matplotlib:
-   - ```!pip install matplotlib```
+```sh
+pip install matplotlib
+```
 - numpy:
-   - ```!pip install numpy```
+```sh
+pip install numpy
+```
 - tensorflow:
-   - ```!pip install tensorflow```
+```sh
+pip install tensorflow
+```
 
 
 
